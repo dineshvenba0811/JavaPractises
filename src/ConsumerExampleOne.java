@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ConsumerExampleOne {
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         // to get all the data from the student database
         // consumer method can be reused to print the statemets.

@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 
 public class FunctionExample {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
 
 

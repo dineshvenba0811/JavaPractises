@@ -2,7 +2,7 @@ import java.util.stream.IntStream;
 
 public class ImperativeVsDeclarative {
 
-    public static void main (String args[]){
+    public static void main (String[] args){
         // imperative apporach
         int sumTotal=0;
         for(int i=0;i<=100;i++){

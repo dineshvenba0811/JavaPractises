@@ -6,7 +6,7 @@ import java.util.function.BiConsumer;
 import java.util.function.BiPredicate;
 
 public class BiPredicateExample {
-    public static  void main(String args[]){
+    public static  void main(String[] args){
 
         BiPredicate<Integer,Double> biPredicate = (gradeLevel, gpa) ->  gradeLevel>=3.7 && gpa >=3.9;
         BiConsumer<String, List<String>> biConsumer=(name,activities) -> System.out.println(name+","+activities);
