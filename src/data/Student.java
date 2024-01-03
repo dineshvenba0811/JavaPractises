@@ -8,15 +8,32 @@ public class Student {
     private int gradeLevel;
     private double gpa;
     private String gender;
-    List<String> activities = new ArrayList<>();
 
-    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", gradeLevel=" + gradeLevel +
+                ", gpa=" + gpa +
+                ", gender='" + gender + '\'' +
+                ", noteBooks=" + noteBooks +
+                ", activities=" + activities +
+                '}';
+    }
+
+    private int noteBooks;
+    public Student(String name, int gradeLevel, double gpa, String gender, int noteBooks, List<String> activities) {
         this.name = name;
         this.gradeLevel = gradeLevel;
         this.gpa = gpa;
         this.gender = gender;
+        this.noteBooks = noteBooks;
         this.activities = activities;
     }
+
+
+    List<String> activities = new ArrayList<>();
+
 
     public String getGender() {
         return gender;
@@ -50,7 +67,13 @@ public class Student {
         this.gpa = gpa;
     }
 
+    public int getNoteBooks() {
+        return noteBooks;
+    }
 
+    public void setNoteBooks(int noteBooks) {
+        this.noteBooks = noteBooks;
+    }
 
     public List<String> getActivities() {
         return activities;
@@ -60,16 +83,7 @@ public class Student {
         this.activities = activities;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", gradeLevel=" + gradeLevel +
-                ", gpa=" + gpa +
-                ", gender='" + gender + '\'' +
-                ", activities=" + activities +
-                '}';
-    }
+
 
 
 }
