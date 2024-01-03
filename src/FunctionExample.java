@@ -11,9 +11,7 @@ import java.util.function.Predicate;
 public class FunctionExample {
 
     public static void main(String[] args){
-
-
-
+// converts list into map
         BiPredicate<Integer,Double> biPredicate=(bipredicateGrade, bipredicateGpa)->bipredicateGrade>=3 && bipredicateGpa>=2.5;
 // one input and one output
         Function<List<Student>, Map<String,Double>> studentFunction= (students) -> {

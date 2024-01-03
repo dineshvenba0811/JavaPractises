@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class ConsumerExampleOne {
     public static void main(String[] args){
-
+        // accepts the input does not return any output
         // to get all the data from the student database
         // consumer method can be reused to print the statemets.
         List<Student> studentDatabase= StudentDataBase.getAllStudents();
