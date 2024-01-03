@@ -24,6 +24,7 @@ public class ReduceMapFilterCombined {
                 .reduce(Integer::max);
         //   .reduce(0, Integer::max);
         //   .reduce(0, Integer::min);
+        // default can be used for sum operations , not for min and max.
         // identity is the default value
     }
     public static void main(String[] args) {
